@@ -42,6 +42,8 @@
             nativeBuildInputs = dependencies;
 
             DOTNET_ROOT = "${dotnetPkg}/share/dotnet";
+
+            packages = with pkgs; [ roslyn-ls ];
           };
         };
     };
