@@ -43,7 +43,10 @@
 
             DOTNET_ROOT = "${dotnetPkg}/share/dotnet";
 
-            packages = with pkgs; [ roslyn-ls ];
+            packages = with pkgs; [
+              netcoredbg # .NET Core debugger
+              roslyn-ls # C# language server
+            ];
           };
         };
     };
